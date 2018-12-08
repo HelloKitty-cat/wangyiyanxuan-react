@@ -1,0 +1,114 @@
+@import "../../../assets/mixins";
+
+.login_content{
+  width: 100%;
+  padding: 0 42/@rem;
+  box-sizing: border-box;
+  margin-top: -40/@rem;
+  height: 220/@rem;
+  margin-bottom: 20/@rem;
+  text-align: center;
+  .login_message{
+    width: 100%;
+    margin-top: 16/@rem;
+    height: 50/@rem;
+    font-size: 24/@rem;
+    color: #333;
+    margin-bottom: 60/@rem;
+    text-align: center;
+    input{
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 20/@rem 0 20/@rem 20/@rem;
+      width: 90%;
+      outline: none;
+      height: 100%;
+      &:focus{
+        border: 1px solid red;
+      }
+    }
+  }
+  .login_verification{
+    width: 100%;
+    height: 50/@rem;
+    font-size: 24/@rem;
+    color: #333;
+    margin-bottom: 40/@rem;
+    text-align: center;
+    position: relative;
+    input{
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 20/@rem 0 20/@rem 20/@rem;
+      width: 90%;
+      outline: none;
+      height: 100%;
+      &:focus{
+        border: 1px solid red;
+      }
+    }
+    .switch_button{
+      font-size: 12/@rem;
+      border: 1px solid #FF69B4;
+      border-radius: 15/@rem;
+      transition: background-color .3s;
+      padding: 0 6/@rem;
+      width: 65/@rem;
+      height: 30/@rem;
+      line-height: 16/@rem;
+      position: absolute;
+      top: 100%;
+      right: 50/@rem;
+      transform: translateY(-50%);
+      background: #DCDCDC;
+      .switch_circle{
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        width: 35/@rem;
+        height: 35/@rem;
+        background: #FF1493;
+        border-radius: 50%;
+        transition: transform .5s;
+      }
+      .right{
+        transform: translateX(-45/@rem);
+      }
+      .switch_text{
+        font-size: 24/@rem;
+        color: #fff;
+        float: left;
+        line-height: 30/@rem;
+      }
+    }
+    .off{
+      background: #fff;
+    }
+  }
+  .hint{
+    margin-top: 80/@rem;
+    margin-left: 24px;
+    display: block;
+    width: 100%;
+    height: 24/@rem;
+    text-align: left;
+    font-size: 24/@rem;
+    color: red;
+  }
+  .loginIn,.OtherLoginWay{
+    margin-top: 40/@rem;
+    width: 90%;
+    height: 90/@rem;
+    background: #b4282d;
+    color: #fff;
+    font-size: 28/@rem;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #b4282d;
+  }
+  .OtherLoginWay{
+    margin-top: 40/@rem;
+    background: none;
+    color: #b4282d;
+  }
+}
